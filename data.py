@@ -5,7 +5,7 @@ from dataset import Dataset
 
 # load dataset
 def load_data():
-    path = r"E:\repos\pycharmRepo\networks\DigitsRecognizer\subprojects\image_to_lines\lines_dataset2"
+    path = r"lines_dataset2"
     data = Dataset.load_from_file(path).data
 
     x_data, y_data = zip(*data)

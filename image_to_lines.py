@@ -38,9 +38,7 @@ class ImageToLines:
         operation = self.lines[label]
         operation(im, x, y, thickness, color, confidence)
 
-    # give image windows to model and draw lines
-    def process_image(self, im_path, mod_path):
-        image = cv2.imread(im_path)  # original image
+    def process_image(self, image, mod_path):
         gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # grayscale image
         h, w = gray_image.shape
 
@@ -71,3 +69,9 @@ class ImageToLines:
                 c += 1
 
         return empty_image
+
+
+    # give image windows to model and draw lines
+    def process_image_from_file(self, im_path, mod_path):
+        image = cv2.imread(im_path)  # original image
+        return self.process_image(image, mod_path)
