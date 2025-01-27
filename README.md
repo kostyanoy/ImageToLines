@@ -17,6 +17,7 @@
 
 
 ### Обработка видео
+Bad Apple =)
 - Оригинал: https://www.youtube.com/watch?v=FtutLA63Cp8
 - Обработка: https://www.youtube.com/watch?v=_EnroIeXQ74
 
